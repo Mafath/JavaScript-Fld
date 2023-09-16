@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9 C</title>
+  </head>
+  <body>
+    <button onclick="iChoose('heads')
+      ">heads
+      </button>
+    <button onclick="iChoose('tails')
+      ">tails
+    </button>
+    <p class="js-choose"></p>
+
+    <script>
+
+      function iChoose (mychoise){
+        const para = document.querySelector('.js-choose')
+
+        if (mychoise === 'heads'){
+          para.innerHTML= `You choose: ${mychoise}`;
+        }
+        else{
+          para.innerHTML = `You choose: ${mychoise}`;
+        }
+      }
+
+
+    </script>
+  </body>
+</html>

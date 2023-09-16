@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 8 c</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: 'basketball',
+        price: '2095 cents',
+        ['delivery-time']: '3 days'
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+
+      product.price = '2595 cents';
+      console.log(product.price);
+
+      console.log(product['delivery-time']);
+
+      const firstOne = {
+        name: 'basketball',
+        price: '2095'
+      };
+
+      const secondOne = {
+        name: 'socks',
+        price: '1090'
+      };
+
+      function comparePrice (parameter1,parameter2) {
+        if (parameter1 < parameter2) {
+          console.log(parameter1)
+        }
+        else {
+          console.log(parameter2)
+        }
+      };
+
+        comparePrice(firstOne.name,secondOne.name);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 9 D</title>
+  </head>
+  <body>
+    <input class="js-name-input" placeholder="Name" onkeydown="mission()">
+    
+    <button onclick=" sub()
+      ">Submit
+    </button>
+    
+    <p class="js-display"></p>
+    <script>
+
+      function mission () {
+        if(event.key === 'Enter'){
+          sub()
+        }
+      }
+
+      function sub () {
+        const var1 = document.querySelector('.js-display')
+        const var2 = document.querySelector('.js-name-input')
+        var1.innerHTML= (`Your name is: ${var2.value}`)
+        
+      }
+
+    </script>
+  </body>
+</html>

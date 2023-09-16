@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Exercise 8 c</title>
+  </head>
+  <body>
+    <script>
+      const product = {
+        name: 'basketball',
+        price: '2095 cents',
+        ['delivery-time']: '3 days'
+      };
+      console.log(product);
+      console.log(product.name);
+      console.log(product.price);
+
+
+      product.price = '2595 cents';
+      console.log(product.price);
+
+      console.log(product['delivery-time']);
+    </script>
+  </body>
+</html>
